@@ -1,0 +1,169 @@
+---
+---
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #29292c;
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: block
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding: 0
+  }
+}
+
+nav {
+  border-bottom: 1px solid #f0f0f2;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  padding: 10px;
+}
+
+.heading {
+  padding-top: 4em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.heading h1, .heading h2 {
+  font-weight: 300;
+}
+
+.heading h1 {
+  font-size: 3em;
+  margin: 20px;
+}
+
+.heading h2 {
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.post-heading h1 {
+  font-size: 2.4em;
+  padding-bottom: 20px;
+}
+
+.post-heading {
+  border-bottom: 1px solid #f0f0f2;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  font-weight: 400;
+  color: #29292c;
+  transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  text-decoration: none;
+  color: #29292c;
+}
+
+a.emphasized {
+  color: #1794CE;
+}
+
+a.emphasized:hover {
+  color: #007BB5;
+}
+
+a:hover {
+  color: #1794CE;
+}
+
+.posts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  border-bottom: 1px solid #f0f0f2;
+  padding-top: 40px;
+}
+
+.post h1 {
+  font-weight: 400;
+  font-size: 2em;
+  color: #29292c;
+}
+
+.post h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.meta {
+  font-size: 1.2em;
+  padding-bottom: 5px;
+}
+
+.post .meta {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.tags a {
+  text-transform: uppercase;
+  font-size: .8em !important;
+}
+
+.tags li:not(:last-of-type)::after {
+  content: ",";
+  display: inline-block;
+  margin-right: 4px
+}
+
+.meta .date:before {
+  content: "-";
+  padding-right: 10px;
+}
+.meta .date {
+  padding: 10px;
+}
+
+.meta .tags {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.meta .tags li {
+  display: inline-block;
+}
+
+nav {
+  border-bottom: 1px solid #f0f0f2;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  padding: 10px;
+}
+
+
+blockquote {
+  font-size: 1.2em;
+}

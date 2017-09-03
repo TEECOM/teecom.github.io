@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="heading post-heading">
+  <h1>{{ page.title }}</h1>
+
+  <div class="meta">
+    <a href="/" class="author emphasized">{{ page.author }}</a>
+    <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
+  </div>
+
+  <div class="meta">
+    <ul class="tags">
+        {% for tag in page.tags %}
+          <li><a href="/" class="emphasized">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{{ content }}

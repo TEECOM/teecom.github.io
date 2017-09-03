@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>TEECOM Blog</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">All Topics</a>
+      <a href="/">Web</a>
+      <a href="/">iOS</a>
+      <a href="/">Hardware</a>
+    </nav>
+
+    <div class="container">
+      <div class="heading post-heading">
+  <h1>Wrapping HTTP errors in Elm</h1>
+
+  <div class="meta">
+    <a href="/" class="author emphasized">Tom Schaefer</a>
+    <span class="date">January 18, 2012</span>
+  </div>
+
+  <div class="meta">
+    <ul class="tags">
+        
+          <li><a href="/" class="emphasized">elm</a></li>
+        
+          <li><a href="/" class="emphasized">web</a></li>
+        
+    </ul>
+  </div>
+</div>
+
+<p>When handling HTTP requests in elm, sometimes it can be useful to add
+extra context to potential errors.</p>
+
+<p>For example, it may be useful to include a record ID along with the <code class="highlighter-rouge">Http.Error</code>
+so that the UI for that specific record can be updated.</p>
+
+<pre><code class="language-elm">Htto.Error -&gt;
+ Foo |&gt; Bar
+</code></pre>
+
+
+    </div>
+  </body>
+</html>
