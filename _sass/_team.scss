@@ -1,0 +1,54 @@
+.team {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.team__member {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.member__image {
+  border-radius: 50%;
+  filter: grayscale(50%);
+  max-width: 250px;
+  width: 100%;
+}
+
+.member__title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+
+.member__read-more {
+  display: block;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hiring {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hiring__title {
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.hiring__button {
+  @extend .button;
+  @extend .button_red;
+
+  &:hover {
+    color: $white;
+  }
+}

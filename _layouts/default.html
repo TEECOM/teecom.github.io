@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <nav class="navbar {{ page.nav_modifier }}">
+      <a href="/" class="navbar__logo">TEECOMlab</a>
+
+      <div class="navbar__links">
+        <a href="/apps_for_buildings" class="navbar__link {% if page.active == 'apps' %}navbar__link_active{% endif %}">Apps</a>
+        <a href="/blog" class="navbar__link">Blog</a>
+        <a href="/team" class="navbar__link {% if page.active == 'team' %}navbar__link_active{% endif %}">Our Team</a>
+      </div>
+    </nav>
+
+    {{ content }}
+  </body>
+</html>

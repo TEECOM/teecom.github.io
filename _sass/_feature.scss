@@ -1,0 +1,38 @@
+.features {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  max-width: 25rem;
+  padding-top: 2rem;
+
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+  img {
+    width: 50px;
+    display: inline-block;
+  }
+}
+
+.feature__title {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.feature__description {
+  margin: 0;
+  padding-left: 1rem;
+}

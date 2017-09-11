@@ -1,0 +1,66 @@
+.room-phone__hero {
+  @extend .section;
+  @extend .section_hero;
+
+  margin: 0;
+  text-align: center;
+
+  background: linear-gradient(to bottom, #ee6c45, #f19537);
+
+  .button {
+    color: #e38b4d;
+  }
+}
+
+.section__title_room-phone {
+  color: #e38b4d;
+}
+
+.room-phone__section {
+  @extend .section;
+
+  background: $light-grey;
+  margin: 0;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+
+  .section__content {
+    max-width: 1200px;
+  }
+}
+
+.room-phone__section_images {
+  text-align: center;
+  img {
+    max-width: 300px;
+    display: inline-block;
+  }
+}
+
+.room-phone__section_orange {
+  @extend .section;
+
+  background:#f19537;
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .button {
+    color: #f19537;
+  }
+}
+
+.room-phone__section_features {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.room-phone__footer {
+  background: darken(#f19537, 15%);
+  padding: 4rem;
+  text-align: center;
+}
