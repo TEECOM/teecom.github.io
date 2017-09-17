@@ -12,6 +12,12 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .room-phone__hero {
+    padding-top: 0;
+  }
+}
+
 .section__title_room-phone {
   color: #e38b4d;
 }

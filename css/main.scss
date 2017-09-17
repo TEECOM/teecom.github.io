@@ -51,6 +51,17 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar__logo {
+    margin-bottom: 1rem;
+  }
+}
+
 .navbar__links {
   font-size: 1.2rem;
 }
@@ -90,6 +101,14 @@ body {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+@media screen and (max-width: 640px) {
+  .button {
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .button_red {

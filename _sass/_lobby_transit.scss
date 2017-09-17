@@ -5,6 +5,17 @@
   margin: 0;
   min-height: 80vh;
   text-align: center;
+
+}
+
+@media screen and (max-width: 640px) {
+  .lobby-transit__hero {
+    padding-top: 0;
+  }
+
+  .lobby-transit__divider::after {
+    display: none;
+  }
 }
 
 .lobby-transit__section {

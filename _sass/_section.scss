@@ -4,7 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .section_hero {
@@ -40,6 +40,7 @@
   color: $font-color;
   font-size: 3rem;
   margin: 0;
+  margin-top: 3rem;
 }
 
 .section__title_blue {
@@ -77,4 +78,23 @@
 .section__image {
   height: 500px;
   width: 500px;
+}
+
+@media screen and (max-width: 640px) {
+  .section {
+    margin-bottom: 5rem;
+  }
+
+  .section_hero {
+    padding-top: 8rem;
+  }
+
+  .section__title {
+    text-align: center;
+  }
+
+  .section__image {
+    width: 100%;
+    height: auto;
+  }
 }
