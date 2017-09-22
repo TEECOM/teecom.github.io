@@ -1,0 +1,52 @@
+.document {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+
+  a {
+    color: $teecom-blue;
+    font-weight: 400;
+    text-decoration: underline;
+    transition: $default-transition;
+
+    &:hover {
+      color: darken($teecom-blue, 15%);
+    }
+  }
+}
+
+ul, ol {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding-left: 1.7rem;
+
+  li {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.document {
+  counter-reset: footnotes;
+  margin-top: 4rem;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+a[rel="footnote"] {
+  counter-increment: footnotes;
+
+  &::after {
+    content: counter(footnotes);
+    font-size: .8rem;
+    vertical-align: super;
+    margin: .1rem;
+  }
+}
+
+a[rel="footnote-return"]::after {
+  content: "↵";
+}
+

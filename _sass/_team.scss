@@ -48,6 +48,9 @@
   @extend .button;
   @extend .button_red;
 
+  color: white !important;
+  text-decoration: none !important;
+
   &:hover {
     color: $white;
   }
