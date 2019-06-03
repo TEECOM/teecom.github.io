@@ -1,37 +1,36 @@
 .document {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
-
-  a {
-    color: $teecom-blue;
-    font-weight: 400;
-    text-decoration: underline;
-    transition: $default-transition;
-
-    &:hover {
-      color: darken($teecom-blue, 15%);
-    }
-  }
-}
-
-ul, ol {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  padding-left: 1.7rem;
-
-  li {
-    padding-bottom: 1.5rem;
-  }
-}
-
-.document {
+  padding: 1rem;
   counter-reset: footnotes;
   margin-top: 4rem;
 
   a {
-    text-decoration: underline;
+    color: $teecom-blue;
+    text-decoration: none;
+    transition: $default-transition;
+    border-bottom: 1px solid $transparent;
+
+    &:hover {
+      color: $teecom-blue;
+      border-bottom: 1px solid $teecom-blue;
+    }
+  }
+
+  h2 {
+    padding-top: 1rem;
+  }
+
+  ul, ol {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding-left: 1.7rem;
+
+    li {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  img {
+    @extend .large-container;
   }
 }
 
@@ -49,4 +48,3 @@ a[rel="footnote"] {
 a[rel="footnote-return"]::after {
   content: "↵";
 }
-

@@ -1,36 +1,31 @@
 ---
 layout: default
 title: TEECOMlabs
+active: index
 ---
 
-<section class="section section_hero">
-  <div class="section__content">
-    <h1 class="section__title">Apps For Buildings</h1>
+<div class="heading">
+  <h1 class="heading__title">Formalized Curiosity</h1>
 
-    <p class="section__text">
-      The design of a building should be based upon its intended purpose: from
-      hard layer shapes, materials and finishes, to soft layer interfaces and
-      applications. Today, the best indoor experiences bridge those two layers
-      with thoughtfully designed apps.
-    </p>
+  <h3 class="heading__subtitle">
+    The
+    <a href="https://teecom.com">TEECOM</a>
+    Development Blog
+  </h3>
+</div>
 
-    <a class="button" href="/apps_for_buildings">See What We're Making</a>
-  </div>
-</section>
+<div class="container">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li class="post">
+        <span class="post__date">{{ post.date | date: '%B %d, %Y' }}</span>
 
-<section class="section">
-  <img src="/assets/Team.png" class="section__image">
+        <a href="{{ post.url | prepend: site.github.url }}" class="post__title">
+          <h2>{{ post.title }}</h2>
+        </a>
 
-  <div class="section__content">
-    <h1 class="section__title section__title_red">Small Team. Big Ambitions.</h1>
-
-
-    <p class="section__text">
-      We’re a close-knit group that enjoys working together to solve interesting
-      challenges. With a focus on learning and growth, our team works hard to
-      better ourselves and push the industry forward.
-    </p>
-
-    <a class="button button_red" href="/team">Meet The Team</a>
-  </div>
-</section>
+        <p class="post__summary">{{ post.summary }}</h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

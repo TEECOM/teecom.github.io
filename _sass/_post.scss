@@ -1,0 +1,19 @@
+.posts {
+  padding-left: 0;
+}
+
+.post {
+  list-style: none;
+  margin: 6rem 0;
+}
+
+.post__date {
+  color: lighten($font-color, 10%);
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.post__title {
+  color: $font-color;
+}

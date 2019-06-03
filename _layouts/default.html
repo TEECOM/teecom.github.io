@@ -13,16 +13,32 @@
   </head>
 
   <body>
-    <nav class="navbar {{ page.nav_modifier }}">
-      <a href="/" class="navbar__logo">TEECOMlabs</a>
+    <div class="site-container">
+      <nav class="navbar">
+        <a href="/" class="navbar__brand">
+          <svg class="brand__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.25333 106.24">
+            <g transform="matrix(1.3333333,0,0,-1.3333333,0,106.24)">
+              <g transform="scale(0.1)">
+                <path d="m 404.57,223.965 c -92.64,0 -167.699,75.078 -167.718,167.711 0,31.64 9.988,60.562 24.066,86.488 12.07,22.25 32.41,13.024 32.41,13.024 20.449,-13.723 5.883,-37.594 5.883,-37.594 -10.754,-18.141 -16.902,-39.278 -16.902,-61.918 0.148,-67.496 54.769,-122.125 122.261,-122.262 67.473,0.137 122.118,54.785 122.278,122.262 0,22.937 -6.328,44.359 -17.368,62.672 0,0 -14.292,23.918 5.356,35.226 0,0 19.375,11.84 32.5,-9.98 15.484,-25.75 24.961,-55.656 24.961,-87.918 0,-92.653 -75.117,-167.711 -167.727,-167.711 z m -79.16,316.09 c 90.637,47.812 163.153,-3.5 163.153,-3.5 10.238,-7.278 12.636,-21.492 5.355,-31.711 -7.285,-10.239 -21.484,-12.672 -31.723,-5.34 0,0 -12.925,8.812 -34.785,12.773 l -0.097,-120.066 c 0,-12.559 -10.196,-22.758 -22.743,-22.758 -12.562,0 -22.718,10.199 -22.718,22.758 v 119.543 c -11.262,-2.238 -23.414,-6.156 -36.286,-12.438 -11.281,-5.523 -24.886,-0.98 -30.468,10.289 -5.582,11.25 -0.801,24.59 10.312,30.45 z m 79.16,152.5 c -165.882,0 -300.351,-134.469 -300.351,-300.344 0,-165.902 134.469,-300.3751 300.351,-300.3751 165.891,0 300.364,134.4731 300.364,300.3751 0,165.875 -134.473,300.344 -300.364,300.344" />
+              </g>
+            </g>
+          </svg>
 
-      <div class="navbar__links">
-        <a href="/apps_for_buildings" class="navbar__link {% if page.active == 'apps' %}navbar__link_active{% endif %}">Apps</a>
-        <a href="/blog" class="navbar__link">Blog</a>
-        <a href="/team" class="navbar__link {% if page.active == 'team' %}navbar__link_active{% endif %}">Our Team</a>
+          <span class="brand__name">
+            TEECOM
+            <small>labs</small>
+          </span>
+        </a>
+
+        <div>
+          <a href="/" class="navbar__link {% if page.active == 'index' %}navbar__link_active{% endif %}">Blog</a>
+          <a href="/team" class="navbar__link {% if page.active == 'team' %}navbar__link_active{% endif %}">Our Team</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        {{ content }}
       </div>
-    </nav>
-
-    {{ content }}
+    </div>
   </body>
 </html>
