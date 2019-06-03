@@ -1,0 +1,58 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $screen-lg;
+  padding: 1.5rem;
+
+  @media screen and (max-width: $screen-sm) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.navbar__brand {
+  align-items: center;
+  display: flex;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+
+  @media screen and (max-width: $screen-sm) {
+    margin-bottom: 1rem;
+  }
+}
+
+.brand__logo {
+  fill: $font-color;
+  height: 4rem;
+}
+
+.brand__name {
+  color: $font-color;
+  font-size: 2rem;
+  font-weight: 400;
+
+  small {
+    margin-left: -0.3rem;
+  }
+}
+
+.navbar__link {
+  color: $font-color;
+  text-decoration: none;
+  transition: $default-transition;
+
+  &:not(:first-of-type) {
+    margin-left: 1.2rem;
+  }
+
+  &:hover {
+    color: $teecom-blue;
+  }
+}
+
+.navbar__link_active {
+  font-weight: 400;
+}

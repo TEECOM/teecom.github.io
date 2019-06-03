@@ -1,0 +1,14 @@
+.heading {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.heading__title, .heading__subtitle {
+  font-weight: 300;
+}
+
+.heading__subtitle {
+  color: $light-font-color;
+  font-size: 1.3rem;
+}
