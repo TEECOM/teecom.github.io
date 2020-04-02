@@ -20,7 +20,7 @@ downwards?
 Based on my really rough mockup, I decided that the badge should wrap upward.
 I struggled to find the best way of implementing this until I learned that
 [`flex-wrap`](https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp) has a
-`reverse` option.
+`wrap-reverse` option.
 
 ![](/assets/reverse-flex-wrap/wrapping.png)
 
