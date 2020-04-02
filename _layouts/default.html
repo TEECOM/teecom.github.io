@@ -4,6 +4,33 @@
 
     <title>{{ page.title }}</title>
 
+    {% if page.title %}
+      <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+      <meta content="Formalized Curiosity" property="og:title">
+    {% endif %}
+
+    {% if page.summary %}
+      <meta content="article" property="og:type">
+    {% else %}
+      <meta content="website" property="og:type">
+    {% endif %}
+
+    {% if page.summary %}
+      <meta content="{{ page.summary }}" property="og:description">
+    {% else %}
+      <meta content="Articles by TEECOMlabs about software development, collaboration, and growth." property="og:description">
+    {% endif %}
+
+    {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+
+    <meta property="og:site_name" content="TEECOMlabs"/>
+
+    <link rel="shortcut icon" href="/assets/favicon.png">
+    <link rel="canonical" href="https://labs.teecom.com/"/>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
 
