@@ -33,10 +33,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-
-    {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
   </head>
 
   <body>
@@ -67,5 +63,9 @@
         {{ content }}
       </div>
     </div>
+
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
   </body>
 </html>
