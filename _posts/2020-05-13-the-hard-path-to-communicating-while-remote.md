@@ -13,7 +13,7 @@ new reality and adapt. The distinction between these two options can sometimes
 get blurry. However, our current situation is unusually clear. Our new
 constraint is that all thought workers are now working remotely. How we cope
 with this constraint can help us not only during this pandemic but also
-afterwards. Secondly, it will have an impact on how our physical work spaces are
+afterwards. Additionally, it will have an impact on how our physical work spaces are
 organized and subdivided.
 
 Video conferencing has displaced in-person gatherings of all kinds, business and
@@ -89,7 +89,7 @@ What does this mean to our physical environment? The open office, our
 controversial norm in 21st century office spaces, assumes that there is a
 benefit to breaking down the cubicle walls that used to divide us. Tear the
 walls down and people will speak more freely and collaboration will
-spontaneously ensue, or so the thinking goes. What if our new model for
+spontaneously ensue, or [so the thinking goes](https://nycofficesuites.com/2017/10/26/key-advantages-open-floor-plan-office/). What if our new model for
 communication, one that grants primacy to writing rather than speaking, demands
 a different floor plan? Perhaps the walls of private study rooms in university
 libraries should be our model.
